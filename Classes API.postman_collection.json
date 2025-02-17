@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "35d2db26-ba23-4b34-a841-35413aaf4d30",
+		"name": "Classes API",
+		"description": "Collection of CRUD operations for Classes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42380789"
+	},
+	"item": [
+		{
+			"name": "Get All Classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/classes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Class by Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/classes/{{classCode}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Class",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"class_code\": \"\", \"class_name\": \"\"}"
+				},
+				"url": "http://localhost:8080/classes"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Class",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"class_code\": \"\", \"class_name\": \"\"}"
+				},
+				"url": "http://localhost:8080/classes/{{classCode}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Class",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/classes/{{classCode}}"
+			},
+			"response": []
+		}
+	]
+}
